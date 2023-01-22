@@ -137,7 +137,7 @@ if (formData.get('prompt') === firstTopic) {
     await loader(messageDiv);
   
     const request = new XMLHttpRequest();
-    request.open('POST', 'http://localhost:5000');
+    request.open('POST', 'https://hashim.onrender.com/');
     request.setRequestHeader('Content-Type', 'application/json');
     request.send(JSON.stringify({ prompt: formData.get('prompt') }));
     request.onload = () => {
